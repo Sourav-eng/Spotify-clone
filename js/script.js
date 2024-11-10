@@ -17,7 +17,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSong(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/Projects/${folder}/`);
+    let a = await fetch(`http://127.0.0.1:3000/Projects/${folder}/`);// here you can add your file path
     let response = await a.text();
 
     let div = document.createElement("div");
