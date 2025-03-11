@@ -17,7 +17,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSong(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/Projects/${folder}/`);// here you can add your file path
+    let a = await fetch(`Projects/${folder}/`);// here you can add your file path
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -61,7 +61,7 @@ async function getSong(folder) {
 
 const playmusic = (track, pause = false) => {
     console.log("Playing track:", track);
-    cureentsong.src = `http://127.0.0.1:3000/Projects/${currfolder}/${encodeURIComponent(track)}.mp3`;
+    cureentsong.src = `Projects/${currfolder}/${encodeURIComponent(track)}.mp3`;
     cureentsong.load();
 
     if (!pause) {
@@ -77,7 +77,7 @@ const playmusic = (track, pause = false) => {
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
 async function displayalbum() {
-    let a = await fetch(`http://127.0.0.1:3000/Projects/song/`);
+    let a = await fetch("Projects/song/`);
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -91,7 +91,7 @@ async function displayalbum() {
 
         if (e.href.includes("/song")) {
             let folder = e.href.split("/").slice(-2)[0];
-            let a = await fetch(`http://127.0.0.1:3000/Projects/song/${folder}/info.json`);
+            let a = await fetch(`Projects/song/${folder}/info.json`);
             let response = await a.json();
 
             cardcont.innerHTML += `<div data-folder="${folder}" class="card"> 
