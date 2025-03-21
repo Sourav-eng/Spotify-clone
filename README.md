@@ -17,9 +17,11 @@ A fully functional **Spotify Clone** built using **HTML, CSS, and JavaScript**. 
 - **CSS** - For styling and responsiveness.
 - **JavaScript** - For interactivity and functionality.
 
-## 📸 Screenshots
+## 🎥 Demo
+[Watch the demo](https://github.com/Sourav-eng/Spotify-clone/issues/1#issue-2937343994)
 
-_Add screenshots or a demo video here_
+
+
 
 ## 📂 Project Structure
 
