@@ -1,4 +1,4 @@
-# Spotify Clone 🎵
+# Spotify APP 🎵
 
 A fully functional **Spotify Clone** built using **HTML, CSS, and JavaScript**. This project replicates key features of the popular music streaming app **Spotify**, providing a seamless music experience.
 
